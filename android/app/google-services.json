@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "888077836131",
+    "firebase_url": "https://vigas-22707.firebaseio.com",
+    "project_id": "vigas-22707",
+    "storage_bucket": "vigas-22707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888077836131:android:f52a40ac790060d32afd56",
+        "android_client_info": {
+          "package_name": "com.example.tgi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888077836131-vgjquq3ppn84oh2fqot5b4f4rfkrnvj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBMnS3T9CKn3EDkdINvQFa2zifKDPLe1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888077836131-vgjquq3ppn84oh2fqot5b4f4rfkrnvj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+
+  "configuration_version": "1"
+}

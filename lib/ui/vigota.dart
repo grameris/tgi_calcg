@@ -73,7 +73,6 @@ _consulta() async {
                               padding: EdgeInsets.all(8.0),
                               child: RichText(
                                   text: TextSpan(
-                                      style: DefaultTextStyle.of(context).style,
                                       children: <TextSpan>[
                                         TextSpan(text:'0 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                         TextSpan(text:'$zeroesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
@@ -85,7 +84,6 @@ _consulta() async {
                               padding: EdgeInsets.all(8.0),
                               child: RichText(
                                   text: TextSpan(
-                                      style: DefaultTextStyle.of(context).style,
                                       children: <TextSpan>[
                                         TextSpan(text:'1 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                         TextSpan(text:'$umesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
@@ -97,7 +95,6 @@ _consulta() async {
                              padding: EdgeInsets.all(8.0),
                              child: RichText(
                                  text: TextSpan(
-                                     style: DefaultTextStyle.of(context).style,
                                      children: <TextSpan>[
                                        TextSpan(text:'2 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                        TextSpan(text:'$dosesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),

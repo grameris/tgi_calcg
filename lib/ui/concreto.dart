@@ -71,7 +71,6 @@ class _ConcretoState extends State<Concreto> {
                           padding: EdgeInsets.all(8.0),
                           child: RichText(
                               text: TextSpan(
-                                  style: DefaultTextStyle.of(context).style,
                                   children: <TextSpan>[
                                     TextSpan(text:'Valor do valor: ', style: TextStyle(fontSize: 20.0,color: Colors.black,)),
                                     TextSpan(text:'$resultado (M²)', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),

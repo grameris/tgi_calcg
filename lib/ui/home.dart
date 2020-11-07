@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
         drawer: CustomDrawer(_pageController),
         backgroundColor: Colors.blueAccent,
         appBar: AppBar(
-          title: Text("\$ Logo \$"),
+          title: Text("\$ Vigota \$"),
           backgroundColor: Colors.blueAccent,
           centerTitle: true,
           shape: RoundedRectangleBorder(
@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
         Scaffold(
             backgroundColor: Colors.blueAccent,
             appBar: AppBar(
-              title: Text("\$ Logo \$"),
+              title: Text("\$ Concreto \$"),
               backgroundColor: Colors.blueAccent,
               centerTitle: true,
               shape: RoundedRectangleBorder(
@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
         Scaffold(
             backgroundColor: Colors.blueAccent,
             appBar: AppBar(
-              title: Text("\$ Logo \$"),
+              title: Text("\$ Malha \$"),
               backgroundColor: Colors.blueAccent,
               centerTitle: true,
               shape: RoundedRectangleBorder(

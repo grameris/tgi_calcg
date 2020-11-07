@@ -85,13 +85,13 @@ class _MalhaState extends State<Malha> {
                                 TextSpan(
                                     text: 'Valor da malha: ',
                                     style: TextStyle(
-                                        fontSize: 20.0, color: Colors.black)),
+                                        fontSize: 18.0, color: Colors.black)),
                                 TextSpan(
                                     text: '$resultado (UN)',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.blueAccent,
-                                        fontSize: 20.0)),
+                                        fontSize: 18.0)),
                               ]))),
                       Padding(
                         padding: const EdgeInsets.all(8.0),

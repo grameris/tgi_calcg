@@ -35,22 +35,28 @@ class _ConcretoState extends State<Concreto> {
       _formKey.currentState.reset();
     }
     if (altura == "H8") {
-      resultado = (((int.parse(areaController.text))*10)/1000);
+      resultado = (((int.parse(areaController.text))*45)/1000);
     }else if (altura == "H12"){
-      resultado = (((int.parse(areaController.text))*20)/1000);;
+      resultado = (((int.parse(areaController.text))*60)/1000);
     }else {
-      resultado = (((int.parse(areaController.text))*30)/1000);;
+      resultado = (((int.parse(areaController.text))*70)/1000);
     }
     showDialog(
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
+            title: RichText(
+              text: TextSpan(children: <TextSpan>[
+                TextSpan(
+                  text: 'Quantidade de Concreto',
+                  style: TextStyle(fontSize: 18.0, color: Colors.blueAccent,fontWeight: FontWeight.bold),)
+              ]),textAlign: TextAlign.center,),
             content: Stack(
               overflow: Overflow.visible,
               children: <Widget>[
                 Positioned(
                   right: -40.0,
-                  top: -40.0,
+                  top: -80.0,
                   child: InkResponse(
                     onTap: () {
                       Navigator.of(context).pop();
@@ -72,8 +78,8 @@ class _ConcretoState extends State<Concreto> {
                           child: RichText(
                               text: TextSpan(
                                   children: <TextSpan>[
-                                    TextSpan(text:'Valor do valor: ', style: TextStyle(fontSize: 20.0,color: Colors.black,)),
-                                    TextSpan(text:'$resultado (M²)', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
+                                    TextSpan(text:'Quantidade: ', style: TextStyle(fontSize: 16.0,color: Colors.black,)),
+                                    TextSpan(text:'$resultado (m³/m²)', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
                                   ]
                               )
                           )
@@ -106,7 +112,7 @@ class _ConcretoState extends State<Concreto> {
             children: <Widget>[
               buildTextField("Area(m²)",areaController, _areaChanged),
               Divider(color: Colors.transparent),
-              Text("Selecione a Arranjo da Viga:",
+              Text("Selecione o Arranjo da Viga:",
                 style: TextStyle(fontSize: 20.0),
                 textAlign: TextAlign.center,
               ),

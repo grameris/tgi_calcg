@@ -55,6 +55,13 @@ class _MalhaState extends State<Malha> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
+            title: RichText(
+                text: TextSpan(children: <TextSpan>[
+              TextSpan(
+                  text: 'Malha de Ferro',
+                  style: TextStyle(fontSize: 18.0, color: Colors.blueAccent,fontWeight: FontWeight.bold),)
+            ]),
+            textAlign: TextAlign.center,),
             content: Stack(
               overflow: Overflow.visible,
               children: <Widget>[
@@ -80,19 +87,18 @@ class _MalhaState extends State<Malha> {
                       Padding(
                           padding: EdgeInsets.all(8.0),
                           child: RichText(
-                              text: TextSpan(
-                                  children: <TextSpan>[
-                                TextSpan(
-                                    text: 'Valor da malha: ',
-                                    style: TextStyle(
-                                        fontSize: 18.0, color: Colors.black)),
-                                TextSpan(
-                                    text: '$resultado (UN)',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.blueAccent,
-                                        fontSize: 18.0)),
-                              ]))),
+                              text: TextSpan(children: <TextSpan>[
+                            TextSpan(
+                                text: 'Valor da malha: ',
+                                style: TextStyle(
+                                    fontSize: 18.0, color: Colors.black)),
+                            TextSpan(
+                                text: '$resultado (UN)',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.blueAccent,
+                                    fontSize: 18.0)),
+                          ]))),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                       )
@@ -123,7 +129,8 @@ class _MalhaState extends State<Malha> {
                       value: 1,
                       groupValue: _radioValue1,
                       activeColor: Colors.white,
-                      onChanged: (newValue) => setState(() => _radioValue1 = newValue),
+                      onChanged: (newValue) =>
+                          setState(() => _radioValue1 = newValue),
                     ),
                     new Text(
                       'Malha 2 x 3',
@@ -134,7 +141,8 @@ class _MalhaState extends State<Malha> {
                       value: 2,
                       groupValue: _radioValue1,
                       activeColor: Colors.white,
-                      onChanged: (newValue) => setState(() => _radioValue1 = newValue),
+                      onChanged: (newValue) =>
+                          setState(() => _radioValue1 = newValue),
                     ),
                     new Text(
                       'Malha 2,45 x 6',
@@ -193,5 +201,3 @@ Widget buildTextField(String label, TextEditingController c, Function f) {
     },
   );
 }
-
-

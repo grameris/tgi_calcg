@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
         drawer: CustomDrawer(_pageController),
         backgroundColor: Colors.blueAccent,
         appBar: AppBar(
-          title: Text(" Vigota "),
+          title: Text(" Viga "),
           backgroundColor: Colors.blueAccent,
           centerTitle: true,
           shape: RoundedRectangleBorder(

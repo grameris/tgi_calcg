@@ -7,6 +7,7 @@ import 'package:splashscreen/splashscreen.dart';
 void main() async {
 
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: MyHomePage(title: 'Splash Screen Flutter'),
     theme: ThemeData(
 

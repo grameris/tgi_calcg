@@ -47,12 +47,18 @@ _consulta() async {
               context: context,
               builder: (BuildContext context) {
                 return AlertDialog(
+                    title: RichText(
+                    text: TextSpan(children: <TextSpan>[
+                    TextSpan(
+                    text: 'Viga Protendida',
+                    style: TextStyle(fontSize: 18.0, color: Colors.blueAccent,fontWeight: FontWeight.bold),)
+                ]),textAlign: TextAlign.center,),
                   content: Stack(
                     overflow: Overflow.visible,
                     children: <Widget>[
                       Positioned(
                         right: -40.0,
-                        top: -40.0,
+                        top: -80.0,
                         child: InkResponse(
                           onTap: () {
                             Navigator.of(context).pop();
@@ -77,7 +83,8 @@ _consulta() async {
                                         TextSpan(text:'0 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                         TextSpan(text:'$zeroesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
                                       ]
-                                  )
+                                  ),
+                                textAlign: TextAlign.center
                               )
                             ),
                             Padding(
@@ -88,7 +95,8 @@ _consulta() async {
                                         TextSpan(text:'1 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                         TextSpan(text:'$umesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
                                       ]
-                                  )
+                                  ),
+                                textAlign: TextAlign.center
                               )
                             ),
                             Padding(
@@ -99,8 +107,8 @@ _consulta() async {
                                        TextSpan(text:'2 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                        TextSpan(text:'$dosesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
                                      ]
-                                 )
-                             )
+                                 ),
+                               textAlign: TextAlign.center)
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -187,7 +195,7 @@ _consulta() async {
                 }).toList(),
               ),
               Divider(color: Colors.transparent),
-              Text("Selecione a Arranjo da Viga:",
+              Text("Selecione o Arranjo da Viga:",
                 style: TextStyle(fontSize: 20.0),
                 textAlign: TextAlign.center,
               ),

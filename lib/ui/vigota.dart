@@ -82,6 +82,7 @@ _consulta() async {
                                       children: <TextSpan>[
                                         TextSpan(text:'0 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                         TextSpan(text:'$zeroesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
+                                        TextSpan(text:' (CM): ', style: TextStyle(fontSize: 18.0,color: Colors.black))
                                       ]
                                   ),
                                 textAlign: TextAlign.center
@@ -94,6 +95,7 @@ _consulta() async {
                                       children: <TextSpan>[
                                         TextSpan(text:'1 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                         TextSpan(text:'$umesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
+                                        TextSpan(text:' (CM): ', style: TextStyle(fontSize: 18.0,color: Colors.black))
                                       ]
                                   ),
                                 textAlign: TextAlign.center
@@ -106,6 +108,7 @@ _consulta() async {
                                      children: <TextSpan>[
                                        TextSpan(text:'2 Escoras: ', style: TextStyle(fontSize: 20.0,color: Colors.black)),
                                        TextSpan(text:'$dosesc', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent,fontSize: 20.0)),
+                                       TextSpan(text:' (CM): ', style: TextStyle(fontSize: 18.0,color: Colors.black))
                                      ]
                                  ),
                                textAlign: TextAlign.center)

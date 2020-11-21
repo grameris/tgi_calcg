@@ -112,7 +112,7 @@ class _ConcretoState extends State<Concreto> {
             children: <Widget>[
               buildTextField("Area(m²)",areaController, _areaChanged),
               Divider(color: Colors.transparent),
-              Text("Selecione o Arranjo da Viga:",
+              Text("Selecione a Altura do Enchimento:",
                 style: TextStyle(fontSize: 20.0),
                 textAlign: TextAlign.center,
               ),

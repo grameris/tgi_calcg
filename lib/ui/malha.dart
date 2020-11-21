@@ -58,7 +58,7 @@ class _MalhaState extends State<Malha> {
             title: RichText(
                 text: TextSpan(children: <TextSpan>[
               TextSpan(
-                  text: 'Malha de Ferro',
+                  text: 'Malha de Aço',
                   style: TextStyle(fontSize: 18.0, color: Colors.blueAccent,fontWeight: FontWeight.bold),)
             ]),
             textAlign: TextAlign.center,),
@@ -67,7 +67,7 @@ class _MalhaState extends State<Malha> {
               children: <Widget>[
                 Positioned(
                   right: -40.0,
-                  top: -40.0,
+                  top: -80.0,
                   child: InkResponse(
                     onTap: () {
                       Navigator.of(context).pop();
